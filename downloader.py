@@ -62,7 +62,7 @@ for x in range(x_folders):
             # downloads the Z images
             for z in range(yz_array[x]):
                 try:
-                    urllib.request.urlretrieve("https://www.shiftingsands.gg//img/Leaflet/Maps/Canyon/{}/{}/{}.png" \
+                    urllib.request.urlretrieve("https://www.shiftingsands.gg//img/Leaflet/Maps/SleepingGiants/{}/{}/{}.png" \
                     .format(x,y,z), "{}/{}/{}/{}.png".format(path,x,y,z))
                 except: 
                     print("Something went wrong downloading Z image {}/{}/{}/{}.png".format(path,x,y,z))
@@ -70,7 +70,7 @@ for x in range(x_folders):
                 else:
                     pass
     
-    print("Successfully filled folder {}/{}.".format(path,x) + "\n")
+    print("Finished filling folder {}/{}.".format(path,x) + "\n")
                     
 print("Finished running.")
 # flashes the taskbar icon
